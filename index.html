@@ -43,7 +43,7 @@
     .form-group {
       margin-bottom: 20px;
     }
-    input, textarea {
+    input, textarea, select {
       width: 100%;
       padding: 10px;
       border: 1px solid #CCC;
@@ -66,23 +66,69 @@
   <section>
     <h1>DomestiQ™ Pro Partner Application</h1>
     <h2>Is Your Cleaning Business Ready to Become a Brand?</h2>
-    <div class="checklist">
-      <label><input type="checkbox" /> I'm undercharging despite my skill</label>
-      <label><input type="checkbox" /> I'm working with the wrong clients</label>
-      <label><input type="checkbox" /> I'm winging pricing, forms, and branding</label>
-      <label><input type="checkbox" /> I want to charge more but lack the system</label>
-      <label><input type="checkbox" /> I want to look and feel like a premium brand</label>
-      <label><input type="checkbox" /> I need done-for-me quotes, kits, policies, pricing and procedures</label>
-    </div>
-    <div class="callout">
-      <strong>If you checked 2 or more:</strong> This program was built for you.
-    </div>
-  </section>
+    <form action="https://formspree.io/f/xvgrobao" method="POST">
+      <div class="checklist">
+        <label><input type="checkbox" name="undercharging" /> I'm undercharging despite my skill</label>
+        <label><input type="checkbox" name="wrong_clients" /> I'm working with the wrong clients</label>
+        <label><input type="checkbox" name="winging_it" /> I'm winging pricing, forms, and branding</label>
+        <label><input type="checkbox" name="no_system" /> I want to charge more but lack the system</label>
+        <label><input type="checkbox" name="need_branding" /> I want to look and feel like a premium brand</label>
+        <label><input type="checkbox" name="need_assets" /> I need done-for-me quotes, kits, policies, pricing and procedures</label>
+      </div>
+      <div class="callout">
+        <strong>If you checked 2 or more:</strong> This program was built for you.
+      </div>
 
-  <section>
-    <h2>Imagine One Year From Now...</h2>
-    <p>Your brand is premium. You attract the right clients. You’re priced properly. Your products, scripts, and onboarding feel like a franchise — but it's still all yours.</p>
-    <textarea rows="4" placeholder="What does that version of your business look like?"></textarea>
+      <div class="form-group">
+        <input type="text" name="name" placeholder="Full Name" required />
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Email Address" required />
+      </div>
+      <div class="form-group">
+        <input type="text" name="business" placeholder="Business Name" />
+      </div>
+      <div class="form-group">
+        <textarea rows="3" name="why_now" placeholder="Why do you want to become a DomestiQ™ Pro?" required></textarea>
+      </div>
+      <div class="form-group">
+        <textarea rows="3" name="differentiator" placeholder="What makes your cleaning business unique or premium?" required></textarea>
+      </div>
+      <div class="form-group">
+        <textarea rows="3" name="vision" placeholder="Imagine success — what would change in your business after 1 year?" required></textarea>
+      </div>
+      <div class="form-group">
+        <label>Are you ready to start this week?</label>
+        <select name="start_ready">
+          <option value="Yes">Yes, I’m ready now</option>
+          <option value="Within 2 weeks">Within 2 weeks</option>
+          <option value="Still deciding">Still deciding</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>What’s your financial readiness?</label>
+        <select name="financial_readiness">
+          <option value="Ready to pay in full">I’m ready to pay in full ($1,497)</option>
+          <option value="Need payment plan">I’ll need the 3-payment option</option>
+          <option value="Just exploring">Just exploring for now</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>What's your biggest struggle right now?</label>
+        <textarea name="biggest_struggle" rows="3"></textarea>
+      </div>
+
+      <!-- Calendly Booking Embed -->
+      <div style="margin-top: 40px; margin-bottom: 40px;">
+        <h2 style="text-align:center;">📅 Book Your DomestiQ™ Strategy Call</h2>
+        <p style="text-align:center;">Secure your 15-minute high-impact strategy session below. We reserve a 30-minute slot to ensure personalized attention.</p>
+        <div style="margin-top: 20px;">
+          <iframe src="https://calendly.com/kaylacollins3/30min" width="100%" height="630" frameborder="0"></iframe>
+        </div>
+      </div>
+
+      <button type="submit">Submit Application</button>
+    </form>
   </section>
 
   <section>
@@ -103,48 +149,5 @@
     </ul>
     <p><em>*All resale pricing is controlled by DomestiQ™ to protect partner profit margins and brand equity.*</em></p>
   </section>
-
-  <section>
-    <h2>Apply Now</h2>
-    <form action="https://formspree.io/f/xvgrobao" method="POST">
-      <div class="form-group">
-        <input type="text" name="name" placeholder="Full Name" required />
-      </div>
-      <div class="form-group">
-        <input type="email" name="email" placeholder="Email Address" required />
-      </div>
-      <div class="form-group">
-        <input type="text" name="business" placeholder="Business Name" />
-      </div>
-      <div class="form-group">
-        <textarea rows="3" name="why_now" placeholder="Why do you want to become a DomestiQ™ Pro?" required></textarea>
-      </div>
-      <div class="form-group">
-        <textarea rows="3" name="differentiator" placeholder="What makes your cleaning business unique or premium?" required></textarea>
-      </div>
-      <div class="form-group">
-        <textarea rows="3" name="vision" placeholder="Imagine success — what would change in your business after 1 year?" required></textarea>
-      </div>
-      
-<section>
-  <h2 style="text-align:center;">📅 Book Your DomestiQ™ Strategy Call</h2>
-  <p style="text-align:center;">Secure your 15-minute high-impact strategy session below. We reserve a 30-minute slot to ensure personalized attention.</p>
-  <div style="margin-top: 20px;">
-    <iframe src="https://calendly.com/kaylacollins3/30min" width="100%" height="630" frameborder="0"></iframe>
-  </div>
-</section>
-
-      <button type="submit">Submit Application</button>
-    </form>
-  </section>
-
-<section>
-  <h2 style="text-align:center;">📅 Book Your DomestiQ™ Strategy Call</h2>
-  <p style="text-align:center;">Secure your 15-minute high-impact strategy session below. We reserve a 30-minute slot to ensure personalized attention.</p>
-  <div style="margin-top: 20px;">
-    <iframe src="https://calendly.com/kaylacollins3/30min" width="100%" height="630" frameborder="0"></iframe>
-  </div>
-</section>
-
 </body>
 </html>
