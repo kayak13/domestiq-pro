@@ -1,122 +1,154 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>DomestiQ™ Pro Partner Application</title>
+  <title>BUILDT Solutions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      font-family: 'Georgia', serif;
-      background: #FAF9F6;
-      color: #2D2D2D;
-      padding: 40px;
-      max-width: 800px;
-      margin: auto;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f5f5;
     }
-    h1, h2 {
+    header {
+      background: #0e1726;
+      color: white;
+      padding: 2rem 1rem;
       text-align: center;
-      margin-bottom: 20px;
     }
-    p, label {
-      font-size: 16px;
-      line-height: 1.6;
+    header img {
+      max-width: 100px;
+      margin-bottom: 1rem;
     }
-    table {
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.1rem;
+      color: #d1d1d1;
+      margin-top: 0.5rem;
+    }
+    .cta-button {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #e86e2c;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+      padding: 3rem 2rem;
+      background: white;
+    }
+    .service-box {
+      background: #fefefe;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+    .service-box h3 {
+      margin-bottom: 0.5rem;
+    }
+    .calculator {
+      padding: 3rem 2rem;
+      background: #f4f4f4;
+    }
+    .calculator h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+    .calculator input, .calculator select {
       width: 100%;
-      border-collapse: collapse;
-      margin: 20px 0;
-    }
-    th, td {
-      border: 1px solid #aaa;
-      padding: 10px;
-      text-align: left;
-    }
-    input, textarea, select {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0 20px;
+      padding: 0.75rem;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
       border: 1px solid #ccc;
+      border-radius: 8px;
     }
-    .callout {
-      background: #F3EEE8;
-      padding: 20px;
-      border-left: 5px solid #C6A57B;
-      margin-bottom: 30px;
+    .calculator button {
+      width: 100%;
+      background: #e86e2c;
+      color: white;
+      padding: 1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .calculator #quoteResult {
+      margin-top: 1.5rem;
+      font-size: 1.25rem;
+      font-weight: 600;
+      text-align: center;
     }
   </style>
 </head>
 <body>
 
-  <h1>DomestiQ™ Pro Partner Application</h1>
+  <header>
+    <img src="https://raw.githubusercontent.com/kayak13/BuildtSolutions/main/assets/buildt_logo.jpeg?raw=true" alt="BUILDT Logo">
+    <h1>BUILDT Solutions</h1>
+    <p>Premium Project Oversight for Residential + Commercial Builds</p>
+    <a href="quote.html" class="cta-button">Get a Fast Quote</a>
+  </header>
 
-  <h2>🧠 Are You Ready to License the DomestiQ™ Standard?</h2>
-  <p>Take this 60-second readiness test. Mark each statement that reflects your current business:</p>
-
-  <form action="https://formspree.io/f/xvgrobao" method="POST">
-    <input type="hidden" name="_redirect" value="https://yourdomain.com/thank-you.html" />
-
-    <label><input type="checkbox" name="test_undercharging" /> I know I’m undercharging for the quality I deliver.</label>
-    <label><input type="checkbox" name="test_clients" /> My clients don’t match the premium level I want to operate at.</label>
-    <label><input type="checkbox" name="test_forms" /> I don’t have branded quotes, SOPs, or policy documents.</label>
-    <label><input type="checkbox" name="test_scale" /> I want to raise my prices, but I need structure to do it.</label>
-    <label><input type="checkbox" name="test_time" /> I don’t have time to build all of this on my own.</label>
-    <label><input type="checkbox" name="test_ready" /> I’m ready to license a brand and become the premium option in my city.</label>
-
-    <div class="callout">
-      <strong>Checked 3 or more?</strong> You’re ready for DomestiQ™ Pro. This isn’t a course — it’s the shortcut.
+  <section class="services">
+    <div class="service-box">
+      <h3>Construction Management</h3>
+      <p>Oversee all phases of your build from pre-con to closeout. We handle vendors, schedules, and scope.</p>
     </div>
+    <div class="service-box">
+      <h3>Contractor Dispatch</h3>
+      <p>Need trusted, licensed contractors fast? We match you with vetted pros in your area.</p>
+    </div>
+    <div class="service-box">
+      <h3>Estimate Reviews</h3>
+      <p>We audit quotes for hidden fees, scope gaps, and inflated labor — so you don’t get burned.</p>
+    </div>
+    <div class="service-box">
+      <h3>Client Advocacy</h3>
+      <p>Dispute resolution, punch list oversight, and owner-side negotiation — we’re in your corner.</p>
+    </div>
+  </section>
 
-    <h2>📦 What’s Included in Your License</h2>
-    <table>
-      <tr><th>Included</th><th>What That Means for You</th></tr>
-      <tr><td>✅ Lifetime License</td><td>Use DomestiQ™ contracts, SOPs, pricing tools, and visuals</td></tr>
-      <tr><td>✅ Resale Rights</td><td>Sell Ash & Ivy™ products for profit at protected pricing</td></tr>
-      <tr><td>✅ Partner Pricing</td><td>Exclusive cleaner discounts on inventory + kits</td></tr>
-      <tr><td>✅ Client Kit System</td><td>Onboarding and upkeep kits to monetize every home</td></tr>
-      <tr><td>✅ Visual Authority</td><td>Market yourself as a DomestiQ™ Pro — instantly premium</td></tr>
-    </table>
+  <section class="calculator">
+    <h2>Instant Estimate Calculator</h2>
+    <div style="max-width: 500px; margin: 0 auto;">
+      <label>Total Sq Ft:</label>
+      <input type="number" id="sqft" placeholder="e.g. 2500">
 
-    <h2>💳 Investment Breakdown</h2>
-    <table>
-      <tr><th>Package</th><th>Details</th><th>Price</th></tr>
-      <tr><td>Pay in Full</td><td>Lifetime license access (save $150)</td><td>$1,497</td></tr>
-      <tr><td>Payment Plan</td><td>3 monthly payments</td><td>3 × $549</td></tr>
-      <tr><td>Add-On</td><td>Optional onboarding kit (physical)</td><td>$129</td></tr>
-    </table>
-    <p><em>*DomestiQ™ enforces MAP pricing to protect brand equity and reseller profitability.</em></p>
+      <label>Service Type:</label>
+      <select id="serviceType">
+        <option value="0.75">Standard Oversight ($0.75/sqft)</option>
+        <option value="1.25">Luxury Oversight ($1.25/sqft)</option>
+        <option value="2.00">Concierge Build Mgmt ($2.00/sqft)</option>
+      </select>
 
-    <h2>👋 Tell Us Where You're At</h2>
-    <p>Full Name:</p><input type="text" name="name" required />
-    <p>Email Address:</p><input type="email" name="email" required />
-    <p>Phone Number:</p><input type="text" name="phone" />
-    <p>Business Name:</p><input type="text" name="business_name" />
-    <p>City/State:</p><input type="text" name="location" />
-    <p>Years in Business:</p><input type="text" name="years_in_business" />
+      <button onclick="calculateQuote()">Get Estimate</button>
+      <p id="quoteResult"></p>
+    </div>
+  </section>
 
-    <p>Why do you believe this partnership is the right move right now?</p><textarea name="why_now" rows="4"></textarea>
-    <p>What makes your cleaning brand worth elevating?</p><textarea name="your_strengths" rows="4"></textarea>
-    <p>What would success with DomestiQ™ look like 6 months from now?</p><textarea name="goal_vision" rows="4"></textarea>
-
-    <p>Are you ready to begin this month?</p>
-    <select name="start_ready">
-      <option value="Yes">Yes, I’m ready</option>
-      <option value="Soon">Within 2 weeks</option>
-      <option value="Not sure">Still deciding</option>
-    </select>
-
-    <p>What’s your financial readiness?</p>
-    <select name="payment_readiness">
-      <option value="Paid in full">Ready to pay in full</option>
-      <option value="3-pay">Prefer 3-pay option</option>
-      <option value="Exploring">Just exploring for now</option>
-    </select>
-
-    <button type="submit">Submit My Application</button>
-  </form>
-
-  <h2>You’re Almost There</h2>
-  <p>Once we receive your application, we’ll review it and send your next steps. If accepted, you’ll gain immediate access to templates, pricing structures, product catalogues, and partner pricing.</p>
-  <p><strong>Let’s make your premium cleaning brand real.</strong></p>
+  <script>
+    function calculateQuote() {
+      const sqft = document.getElementById("sqft").value;
+      const rate = document.getElementById("serviceType").value;
+      const result = sqft * rate;
+      if (!sqft || sqft <= 0) {
+        document.getElementById("quoteResult").innerText = "Enter a valid square footage.";
+      } else {
+        document.getElementById("quoteResult").innerText = `Estimated Cost: $${result.toFixed(2)}`;
+      }
+    }
+  </script>
 
 </body>
 </html>
